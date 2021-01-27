@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <link rel="stylesheet" href="./furnitureCss/Normalize.css">
+    <link rel="stylesheet" href="./furnitureCss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+
+    <body>
+
+    <!--scroll to top button-->
+    <div class="scrollTop">
+        <i></i>
+    </div>
+    
+    <!--create Header-->
+      <header> 
+        <nav class="nav1">
+            <h3>
+                <i class="fas fa-couch"></i> &nbsp; Welcome You to ZenHouse Furniture!
+            </h3>   
+            <ul class="settings">
+                <li class="currancy">
+                    <i class="fas fa-coins"></i> currancy
+                    <ul class="currancyOption">
+                        <li class="dollar">USD &dollar;</li>
+                        <li class="pound">EGP &pound;</li>
+                        <li class="euro">EUR &euro;</li>
+
+                    </ul>
+                </li>
+                <li><a href="signup.html">
+                    <i class="far fa-user-circle"></i> My Account
+                </a></li>
+                <li><a href="wishlist.html">
+                    <i class="far fa-heart wish"></i> List
+                </a></li>
+            </ul>
+           
+        </nav>
+      
+        <nav class="nav2">
+            <ul class="conatinerUl">
+                <li class="img"><img src="./furnitureImages/ZenHouse+Logo+500.png"></li>
+              <!--  <li class="email">
+                    <a href="mailto:zenabm410@gmail.com"><i class="far fa-envelope"></i>zenabm410@gmail.com</a>
+                </li>-->
+                <ul class="rightOption">
+                <li><form><input type="search" placeholder="Search.."></form></li>
+                <li>
+                    <div class="cartIcon">
+                        <a href="cartPage.html"><i class="fas fa-cart-arrow-down"></i></a>
+                        <div class="cartCounter">0</div>
+                    </div>
+                    <div class="cartView">
+                        
+                    </div>
+
+                </li>
+                </ul>
+            </ul>
+        </nav>
+
+        <nav class="nav3">
+            <ul class="container">
+                <li><a href="Artfurniture.html">Home</a></li>
+                <li><a href="Aboutus.html">ABout Us</a></li>
+                <li class="shop">
+                   Shop
+                    <div class="collection">
+                        <ul class="col">
+                            <h3>Bed Room</h3>
+                            <li>
+                                <a href="">Bed</a>
+                            </li>
+                            <li>
+                                <a href="">Dresser</a>
+                            </li>
+                            <li>
+                                <a href="">Nightstands</a>
+                            </li>
+
+                            <li><a href="#">Kids Bed</a></li>
+                            
+                        </ul>
+                          <ul class="col">
+                              <h3>Dinning Room</h3>
+                              <li>
+                                  <a href="">Bar Stools</a>
+                              </li>
+                              <li>
+                                <a href="">Dinning Chair</a>
+                            </li>
+                            <li>
+                                <a href="">Dinning Table</a>
+                            </li>
+                            <li>
+                                <a href="">Sideboard & Buffet Tables</a>
+                            </li>
+                            
+                          </ul>
+
+                          <ul class="col">
+                            <h3>Living Room</h3>
+                            <li>
+                                <a href="">Accent Chairs</a>
+                            </li>
+                            <li>
+                                <a href="">Sofa</a>
+                            </li>
+                            <li>
+                                <a href="">chaiselong</a>
+                            </li>
+                            <li>
+                                <a href="">Sectional</a>
+                            </li>
+                            
+                        </ul>
+
+                        <ul class="col">
+                            <h3>Office</h3>
+                            <li>
+                                <a href="">Task Chair</a>
+                            </li>
+                            <li>
+                                <a href="">Office Stools</a>
+                            </li>
+                            <li>
+                                <a href="">Office Desks </a>
+                            </li>
+                            
+                        </ul>
+
+                      
+
+                        <ul class="col">
+                            <h3>Kids Room</h3>
+                          
+
+                            <li><a href="#">Kids Bed</a></li>
+                            
+                        </ul>
+
+
+
+                        <ul class="col">
+
+                                    <h3>All</h3>
+                                    <li> <a href="shop.html">Shop</a></li>
+
+                        </ul>
+
+                    </div>
+                </li>
+                <li><a href="Contactus.html">
+                  ContactUs
+                </a></li>
+                <li>
+                    <a href="Blog.html">Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="nav4">
+           <ul>
+               <li> <a href="Artfurniture.html">Home</a></li>
+               <li> > </li>
+               <li class="active"><a href="#">wishlist</a></li>
+           </ul>
+        </nav>
+    
+      </header>
+<!-- create scroll button -->
+<div class="scrollTop background">
+    <i class="fas fa-angle-up"></i>
+
+</div>
+
+<section class='cartTable wishTable'>
+
+    <div class="container">
+     <table border="1" id="table">
+         <thead>
+             <tr>
+             <th>REMOVE</th>
+             <th>IMAGE</th>
+             <th>PRODUCT</th>
+             <th>UNIT PRICE</th>
+             <th>STOCK STATUS</th>
+             <th>ADD TO CART</th>
+             </tr>
+
+         </thead>
+
+         <tbody id="tbody">
+         <tr>
+                <td class="remove"><i class="far fa-trash-alt"></i></td>
+                 <td class="image"><div class="img"><img src="./furnitureImages/Living Room/Accent Chairs/Aimee+Barrel+Chair (10).jpg"></div></td>
+                 <td>Helder chair</td>
+                 <td><span class="price"><span class="Price" value="200">200</span><span class="Dollar">$</span></td>
+                 <td>in stock</td>
+                 <td><form><div class="buttons"><input type="button" value="Add To Cart"></div></td>
+              
+             
+             </tr>
+             <tr>
+                <td class="remove"><i class="far fa-trash-alt"></i></td>
+                 <td class="image"><div class="img"><img src="./furnitureImages/Dining Room/Sideboard&buffet Tables/Bellbrook+Wide+Buffet+Table (5).jpg"></div></td>
+                 <td>Helder chair</td>
+                 <td><span class="price"><span class="Price" value="200">200</span><span class="Dollar">$</span></td>
+                 <td>in stock</td>
+                 <td><form><div class="buttons"><input type="button" value="Add To Cart"></div></td>
+              
+             
+                 </tr>
+         </tbody>
+     </table>
+    </div>
+
+
+  </section>
+
+
+ <!--section footer-->
+
+
+ <footer>
+    <ul class="allInformation">
+
+          <li class="col">
+          <img src="./furnitureImages/ZenHouse+Logo+500.png">
+
+          <ul>
+         <li><p>Addresss: No 123 - Furtinure Street, USA.</p></li>
+         <li><p>Phone 01: +(800) 123 456 78</p></li>
+         <li><p>Phone 02: +(100) 123 456 789</p></li>
+         <li><p>  Fax : (800) 123 456 789</p></li>
+        <li><p>Email: <a href="mailto:zenabm410@gmail.com">zenabm410@gmail.com</a></p></li>
+          </ul>
+
+          </li>
+       
+            <li class="col">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="#SiteMap">SiteMap</a></li>
+                    <li><a href="special">special</a></li>
+                    <li><a href="#delivery">DeliveryInformation</a></li>
+                    <li><a href="Order">orderHistory</a></li>
+                    <li><a href="Privacy">Privacy policy</a></li>
+                </ul>
+            </li>
+
+            <li class="col">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li><a href="#MyAccount">My Account</a></li>
+                    <li><a href="#GiftCards">Gift Cards</a></li>
+                    <li><a href="#ReturnPolicy">Return Policy</a></li>
+                    <li><a href="YourOrders">Your Orders</a></li>
+                    <li><a href="#SubWay"> Sub Way</a></li>
+                </ul>
+            </li>
+
+
+            <li class="col">
+                <h4>My Account</h4>
+                <ul>
+                    <li><a href="#MyAccount">My Account</a></li>
+                    <li><a href="CheckOut">Check Out</a></li>
+                    <li><a href="#logIN">log In</a></li>
+                    <li><a href="#orderStatus">Order status</a></li>
+                    <li><a href="#statusMap">Site Map</a></li>
+                </ul>
+            </li>
+
+            <li class="col lastCols">
+                <h4 class="lastHead">SIGN UP NEWSLETTER</h4>
+                <p>Be the first to hear about new trending and offers and see how youve helped</p>
+                <form>
+                    <input type="email" placeholder="enter you mail">
+                    <button>Subscribe</button>
+                </form>
+            </li>
+        </ul>
+   
+
+</footer>
+
+
+
+<div class="footerLinks">
+          
+    <ul class="links">
+        <li class="copyRight"> Copyright &copy; 2021<span> <span class="z">Zen</span>House </span>.All Right reserved</li>
+        <li>
+            <ul class="social">
+                <li><a><i class="fab fa-twitter"></i></a></li>
+                <li><a><i class="fab fa-facebook-f"></i></a></li>
+                <li><a><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </li>
+
+        <li class="payment">
+            <ul>
+                <li><a href="#"><img src="./furnitureImages/visa.jpg" style="width:35px;height: 20px;"></a></li>
+                <li><a href="#"><img src="./furnitureImages/paypal.png" style="width:35px;height: 20px;"></a></li>
+                <li><a href="#"><img src="./furnitureImages/payoneerlogo-supplied-310x194.png" style="width:35px;height: 20px;"></a></li>
+                <li><a href="#"><img src="./furnitureImages/masterCard.jpg" style="width:35px;height: 20px;"></a></li>
+                <li><a href="#"><img src="./furnitureImages/visaelctrons.png" style="width:35px;height: 20px;"></a></li>
+                <li><a href="#"><img src="./furnitureImages/logo-skrill.png" style="width:35px;height: 20px;"></a></li>
+
+
+            </ul>
+        </li>
+    </ul>
+   </div>
+
+   <div class="partnerSlider">
+    <ul class="companyItems">
+       
+        <li><a href="https://www.allmodern.com/" target="_blank"><img src="furnitureImages/partners/AllModern_NewLogo_Color_NoURL_highres.jpg"></a></li>
+        <li><a href="https://www.jossandmain.com/" target="_blank"><img src="furnitureImages/partners/perigoldcom.jpg"></a></li>
+        <li><a href="https://www.wayfair.com/" target ="_blank"><img src="furnitureImages/partners/fd04f872-60a4-49ec-be94-b3d922846e43-Wayfair_logo.jpg"></a></li>
+    </ul>
+</div>
+
+
+
+<script src="./furnitureJs/j.s/jquery-3.5.1.js"></script>
+<script src="./furnitureJs/zenHouse.js"></script>
+</body>
+
+</html>
