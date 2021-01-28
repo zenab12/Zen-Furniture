@@ -128,12 +128,12 @@ $(".dollar").on('click',function(){
 });
 
 
-$('.productItem .colors li').on('click', function () {
+// $('.productItem .colors li').on('click', function () {
         
-    $(this).addClass('active').siblings().removeClass('active').parent().siblings().removeClass('active');
+//     $(this).addClass('active').siblings().removeClass('active').parent().siblings().removeClass('active');
     
-    $("." + $(this).data('color')).addClass('active').siblings().removeClass('active')
-});
+//     $("." + $(this).data('color')).addClass('active').siblings().removeClass('active')
+// });
 
 $(".fa-list").on('click',function(){
     
@@ -151,9 +151,18 @@ $(".fa-th").on('click',function(){
      $(".AccentChairs > div").removeClass('randomProducts').addClass('featuredProducts');
      $("p.random").addClass('hidden');
  
-     });
+});
 
-   
+$(".productItem .productDetail .colors li").on('click', function (e) {
+    $(e.target).addClass('active').siblings().removeClass('active');
+
+    var colorClass = "img." + $(e.target).data('color');
+
+    var imgsContainer = $(e.target).parent().parent().parent().parent().children('.productimg').children();
+
+    imgsContainer.children(colorClass).addClass('active').siblings().removeClass('active');             
+});
+
 /*  
 let arr = [];
      for (var i=3;i< $('.productItem').length;i++){
