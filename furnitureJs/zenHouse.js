@@ -158,39 +158,10 @@ $(".productItem .productDetail .colors li").on('click', function (e) {
 
     var colorClass = "img." + $(e.target).data('color');
 
-    var imgsContainer = $(e.target).parent().parent().parent().parent().children('.productimg').children();
+    var imgsContainer = $(e.target).parentsUntil('.product-item').children('.productimg').children();
 
     imgsContainer.children(colorClass).addClass('active').siblings().removeClass('active');             
 });
-
-/*  
-let arr = [];
-     for (var i=3;i< $('.productItem').length;i++){
-         product =$(".productItem")[i];
-         arr.push(product);
-     }
-
-     console.log(arr[0]);
-    arr[0].children.find('.colors').find('li').on('click', function () {
-    $(this).addClass('active').siblings().removeClass('active').parent().siblings().removeClass('active');
-    $("." + $(this).data('color')).addClass('active').siblings().removeClass('active').parent().siblings().removeClass('active');
-         
- })
- 
- 
-
-    
-
-
- li.addEventListener('click',function(){
-    for (var j=0;j< arr.length;j++){
-        prod =arr[j];
-    this.addClass('active').siblings().removeClass('active');
-
-    document.querySelectorAll((`${prod} img` + "." + this.data('color'))).addClass('active').siblings().removeClass('active')
-    }
-}
- */
 
 
 
